@@ -8,11 +8,12 @@ programa
 		//Tabela para armazenar nomes de alunos e suas respectivas notas e a media final
 		//matriz[linha][coluna] -> [linha][coluna]
 		// nome n1 n2 n3 n4 media
+
+		// Esta com um problema para matriz, se colcoar mais de uma pessoa o programa cracha, precisa ver isso
 		
 		cadeia matriz[2][6]
 		cadeia nome, nota
 		real media = 0.0
-		
 
 		para (inteiro linha = 0; linha < Util.numero_linhas(matriz); linha++) {
 			escreva("Ola, qual seu nome: ")
@@ -28,20 +29,20 @@ programa
 					
 					matriz[linha][coluna] = nota
 
-				}senao se(coluna == 5){
-					para(inteiro i = 0; i < Util.numero_linhas(matriz); i++){
-						para(inteiro j = 1; j < Util.numero_colunas(matriz); j++){
-							
-							se(j <= 4 ){
-								media = media + Tipos.cadeia_para_real(matriz[i][j])
-							}
+				}senao se(coluna == 5 ){
+					para(inteiro j = 1; j < Util.numero_colunas(matriz); j++){
+						escreva("Media "+ j +": "+ media +"\n")
+						se(j <= 4 ){
+							media = media + Tipos.cadeia_para_real(matriz[linha][j])
 						}
 					}
-					
+
 					media = media / (Util.numero_colunas(matriz) - 2)
 					matriz[linha][coluna] = Tipos.real_para_cadeia(media)
 				}
-				
+
+				media = 0.0
+
 			}
 		}
 
@@ -71,7 +72,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 266; 
+ * @POSICAO-CURSOR = 1021; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
