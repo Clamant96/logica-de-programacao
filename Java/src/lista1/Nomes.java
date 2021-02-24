@@ -1,4 +1,4 @@
-package nomesfamilia;
+package lista1;
 
 public class Nomes {
 	public static void main(String[] args) {

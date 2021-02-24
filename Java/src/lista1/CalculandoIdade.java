@@ -1,4 +1,4 @@
-package calculandoidade;
+package lista1;
 
 import java.util.Calendar;
 import java.util.Scanner;

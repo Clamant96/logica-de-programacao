@@ -1,4 +1,4 @@
-package calculandoexpressao;
+package lista1;
 
 import java.util.Scanner;
 
@@ -12,19 +12,19 @@ public class CalculandoExpressao {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a, b, c;
+		double a, b, c;
 		double r, s, d, resultadoR, resultadoS;
 		
 		Scanner estradaInt = new Scanner(System.in);
 
 		System.out.print("Informe o valor de A: ");
-		a = estradaInt.nextInt();
+		a = estradaInt.nextDouble();
 
 		System.out.print("Informe o valor de B: ");
-		b = estradaInt.nextInt();
+		b = estradaInt.nextDouble();
 
 		System.out.print("Informe o valor de C: ");
-		c = estradaInt.nextInt();
+		c = estradaInt.nextDouble();
 
 		r = a + b;
 		s = b + c;
@@ -40,7 +40,7 @@ public class CalculandoExpressao {
 
 		d = (resultadoR + resultadoS) / 2;
 
-		System.out.println("O resultado da expressao e "+ d);
+		System.out.println("O resultado da expressao e "+ Math.round(d));
 
 	}
 

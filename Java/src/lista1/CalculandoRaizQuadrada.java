@@ -1,4 +1,4 @@
-package raizquadrada;
+package lista1;
 
 import java.util.Scanner;
 

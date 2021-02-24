@@ -1,4 +1,4 @@
-package calculadoradatanascimento;
+package lista1;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package tempodeduracao;
+package lista1;
 
 import java.util.Scanner;
 

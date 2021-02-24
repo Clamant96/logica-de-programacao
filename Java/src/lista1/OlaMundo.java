@@ -1,4 +1,4 @@
-package olamundo;
+package lista1;
 
 public class OlaMundo {
 	public static void main(String[] args) {

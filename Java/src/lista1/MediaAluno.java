@@ -1,4 +1,4 @@
-package calculandomedialuno;
+package lista1;
 
 import java.util.Scanner;
 

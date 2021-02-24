@@ -1,4 +1,4 @@
-package calculandoequacao;
+package lista1;
 
 import java.util.Scanner;
 
