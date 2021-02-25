@@ -3,6 +3,13 @@ package lista2;
 import java.util.Scanner;
 
 public class ParOuImpar {
+	
+	/*
+	 * 4- Faça um programa em que permita a entrada de um número qualquer e exiba se este
+		número é par ou ímpar. Se for par exiba também a raiz quadrada do mesmo; se for
+		ímpar exiba o número elevado ao quadrado.
+	 */
+	
 	public static void main(String[] args) {
 		int numero;
 		
@@ -13,10 +20,10 @@ public class ParOuImpar {
 
 		if(numero >= 0){
 			if(numero % 2 == 0){
-				System.out.println("O numero "+ numero +" e par");	
+				System.out.println("O numero "+ numero +" e par. Sua raiz quadrada e "+ Math.sqrt(numero));	
 			}
 			else{
-				System.out.println("O numero "+ numero +" e impar");	
+				System.out.println("O numero "+ numero +" e impar. Seu valor elevando ao quadrado e "+ Math.pow(numero, 2));	
 			}
 			
 		}else{
