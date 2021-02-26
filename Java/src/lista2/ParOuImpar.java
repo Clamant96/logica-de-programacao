@@ -1,5 +1,6 @@
 package lista2;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ParOuImpar {
@@ -14,16 +15,17 @@ public class ParOuImpar {
 		int numero;
 		
 		Scanner entradaInt = new Scanner(System.in);
+		DecimalFormat formatacao = new DecimalFormat("0.00");
 		
 		System.out.print("Escreva um numero inteiro: ");
 		numero = entradaInt.nextInt();
 
 		if(numero >= 0){
 			if(numero % 2 == 0){
-				System.out.println("O numero "+ numero +" e par. Sua raiz quadrada e "+ Math.sqrt(numero));	
+				System.out.println("O numero "+ numero +" e par. Sua raiz quadrada e "+ formatacao.format(Math.sqrt(numero)));	
 			}
 			else{
-				System.out.println("O numero "+ numero +" e impar. Seu valor elevando ao quadrado e "+ Math.pow(numero, 2));	
+				System.out.println("O numero "+ numero +" e impar. Seu valor elevando ao quadrado e "+ formatacao.format(Math.pow(numero, 2)));	
 			}
 			
 		}else{

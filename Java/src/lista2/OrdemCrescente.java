@@ -51,6 +51,9 @@ public class OrdemCrescente {
 
 			 }
 	        
+	     }else if((a == b) && (a == c) && (b == a) && (b == c) && (c == a) && (c == b)) {
+	    	 System.out.println(a +" "+ b +" "+ c);
+	    	 
 	     }
 	
 	}
