@@ -77,13 +77,12 @@ public class MinhaAgenda {
 								System.out.println("Evento: "+ (j + 1) +" as "+ i +"h - "+ agendaPessoa[i][j]);
 								
 								contador++;
-								
-								System.out.printf("\nEventos cadastrados: %d \n", contador);
 
 							}
 						}
 					}
 					
+					System.out.printf("\nEventos cadastrados: %d \n", contador);
 					System.out.println();
 					
 				break;
