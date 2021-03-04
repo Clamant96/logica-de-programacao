@@ -66,6 +66,25 @@ public class Loja {
 					i--;
 					
 					System.out.println("Produto: "+ manipulandoProduto +" excluido com sucesso!");
+					
+					if(produto.size() == 0) {
+						System.out.println("Voce deletou todos os itens de seu estoque");
+						
+						System.out.println();
+						System.out.println("=============================");
+						System.out.println("0 | Finalizar a secao");
+						System.out.println("1 | Cadastrar um novo produto");
+						System.out.print("==> ");
+						opcao = entradaDados.next().toUpperCase().charAt(0);
+						
+						entradaDados.nextLine();
+						
+						if(opcao == '1') {
+							System.out.print("Qual o nome do produto? ");
+							manipulandoProduto = entradaDados.nextLine();
+							produto.add(manipulandoProduto);
+						}
+					}
 				}
 				
 			}
